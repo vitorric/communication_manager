@@ -24,6 +24,8 @@
     ],
     "rules": {
         "@typescript-eslint/no-namespace": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
         //     "import/no-cycle": "off",
         //     "no-new": "off",
         //     "no-prototype-builtins": "off",
@@ -49,7 +51,6 @@
         //             "argsIgnorePattern": "_"
         //         }
         //     ],
-        //     "no-useless-constructor": "off",
         "@typescript-eslint/naming-convention": [
             "error",
             {
