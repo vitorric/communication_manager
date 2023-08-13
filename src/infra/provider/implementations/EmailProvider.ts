@@ -40,7 +40,7 @@ class EmailProvider implements IEmailProvider {
 
     const msg = {
       to: message.to,
-      from: `${message.sender} <testing@test.com>`,
+      from: `${message.sender.name} <${message.sender.email}>`,
       subject: message.title,
       html: message.html,
       attachments: [],
@@ -84,7 +84,8 @@ class EmailProvider implements IEmailProvider {
   private async sendGridEmail(message: EmailProviderDomain.Send): Promise<any> {
     const sgConfig = {
       apikey: process.env.SENDGRID_API_KEY,
-      fromMail: process.env.SENDGRID_DEFAULT_EMAIL,
+      name: message.sender.name,
+      fromMail: message.sender.email,
     };
 
     const sgMail = new MailService();
@@ -92,7 +93,7 @@ class EmailProvider implements IEmailProvider {
 
     const msg = {
       to: message.to,
-      from: `${message.sender} <${sgConfig.fromMail}>`,
+      from: `${sgConfig.name} <${sgConfig.fromMail}>`,
       subject: message.title,
       html: message.html,
       attachments: [],

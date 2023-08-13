@@ -1,3 +1,4 @@
+import Sender from '@domain/entities/Sender';
 import { TReturnFn } from '@domain/types';
 
 export namespace EmailProviderDomain {
@@ -5,7 +6,7 @@ export namespace EmailProviderDomain {
     to: string;
     title: string;
     html: string;
-    sender: string;
+    sender: Sender;
     files?: Array<{
       path: string;
       name: string;
