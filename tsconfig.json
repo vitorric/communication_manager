@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "module": "commonjs",
+        "lib": [
+            "es2021"
+        ],
+        "rootDir": ".",
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "allowJs": true,
+        "removeComments": true,
+        "types": ["jest", "node"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "pretty": true,
+        "paths": {
+            "@core/*": [
+                "./src/core/*"
+            ],
+            "@application/*": [
+                "./src/application/*"
+            ],
+            "@domain/*": [
+                "./src/domain/*"
+            ],
+            "@infra/*": [
+                "./src/infra/*"
+            ],
+            "@__testsUtil__/*": [
+                "src/__testsUtil__/*"
+            ]
+        },
+        "declaration": true,
+        "isolatedModules": true
+    },
+    "include": [
+        "./src/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "coverage",
+        "dist"
+    ]
+}
