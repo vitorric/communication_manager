@@ -31,14 +31,14 @@
         //     "max-classes-per-file": "off",
         //     "radix": "off",
         //     "@typescript-eslint/no-explicit-any": "off",
-        //     "no-console": "off",
+        "no-console": "off",
         //     "no-param-reassign": [
         //         2,
         //         {
         //             "props": false
         //         }
         //     ],
-        //     "import/prefer-default-export": "off",
+        "import/prefer-default-export": "off",
         //     "@typescript-eslint/explicit-function-return-type": [
         //         "off"
         //     ],
@@ -78,13 +78,13 @@
             }
         ],
         //     "class-methods-use-this": "off",
-        //     "import/extensions": [
-        //         "error",
-        //         "ignorePackages",
-        //         {
-        //             "ts": "never"
-        //         }
-        //     ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never"
+            }
+        ],
         "import-helpers/order-imports": [
             "warn",
             {

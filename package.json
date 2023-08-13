@@ -4,7 +4,7 @@
   "description": "Program the schedule to send communication using email, sms or whatsapp.",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=local tsnd -r tsconfig-paths/register --poll --transpile-only --respawn --ignore-watch node_modules --exit-child --no-notify src/server.ts",
+    "dev": "NODE_ENV=local tsnd -r tsconfig-paths/register --poll --transpile-only --respawn --ignore-watch node_modules --exit-child --no-notify src/app.ts",
     "docker-up:local": "docker-compose --env-file .env.local up",
     "docker-build:local": "docker-compose --env-file .env.local build"
   },
@@ -44,6 +44,7 @@
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-typescript": "^7.22.5",
     "@types/jest": "^29.5.3",
+    "@types/morgan": "^1.9.4",
     "@types/node": "^20.4.10",
     "@types/nodemailer": "^6.4.9",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
