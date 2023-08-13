@@ -17,9 +17,7 @@ const server = async (): Promise<any> => {
       const _server: Server = createServer(app);
 
       app.use(
-        cors({
-          origin: process.env.CORS_ORIGIN,
-        }),
+        cors(),
         helmet(),
         morgan('dev'),
         express.json({ limit: '1000MB' }),

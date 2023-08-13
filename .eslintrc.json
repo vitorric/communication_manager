@@ -23,13 +23,14 @@
         "eslint-plugin-import-helpers"
     ],
     "rules": {
-        //     "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-namespace": "off",
         //     "import/no-cycle": "off",
         //     "no-new": "off",
         //     "no-prototype-builtins": "off",
-        //     "no-restricted-syntax": "off",
+        "no-restricted-syntax": "off",
         //     "max-classes-per-file": "off",
         //     "radix": "off",
+        "class-methods-use-this": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "no-console": "off",
         //     "no-param-reassign": [
@@ -77,7 +78,6 @@
                 "semi": true
             }
         ],
-        //     "class-methods-use-this": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
