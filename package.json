@@ -1,12 +1,15 @@
 {
-  "name": "email_manager",
+  "name": "communication_manager",
   "version": "1.0.0",
-  "description": "Send email using queue.",
+  "description": "Program the schedule to send communication using email, sms or whatsapp.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "communication",
+    "whatsapp",
+    "sms",
     "email",
     "pdf",
     "queue",
