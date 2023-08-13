@@ -4,7 +4,9 @@
   "description": "Program the schedule to send communication using email, sms or whatsapp.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=local tsnd -r tsconfig-paths/register --poll --transpile-only --respawn --ignore-watch node_modules --exit-child --no-notify src/server.ts",
+    "docker-up:local": "docker-compose --env-file .env.local up",
+    "docker-build:local": "docker-compose --env-file .env.local build"
   },
   "keywords": [
     "communication",

@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mongodb:
+    extends:
+      file: docker-compose.base.yml
+      service: mongodb
+
+  redis:
+    extends:
+      file: docker-compose.base.yml
+      service: redis
+
+volumes:
+  node_modules:
+  mongodb_data:
